@@ -1,0 +1,5 @@
+# Worlds requiring whitelist access
+# add entries here, e.g.:
+whitelisted-worlds: []
+# - world_nether
+# - custom_world

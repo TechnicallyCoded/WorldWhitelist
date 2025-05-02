@@ -1,0 +1,13 @@
+name: WorldWhitelist
+main: com.tcoded.whitelistworld.WorldWhitelist
+version: 1.0
+api-version: 1.16
+commands:
+  worldwhitelist:
+    description: Manage world whitelist access.
+    usage: /<command> set <player> <world> <true|false>
+    permission: worldwhitelist.manage
+permissions:
+  worldwhitelist.manage:
+    description: Allows usage of worldwhitelist commands.
+    default: op
