@@ -31,13 +31,13 @@ public class PlayerData {
     }
 
     public void serialize(ConfigurationSection section) {
-        section.set("allowedWorlds", List.copyOf(allowedWorlds));
+        section.set("allowed-worlds", List.copyOf(allowedWorlds));
     }
 
     public static PlayerData deserialize(ConfigurationSection section) {
         PlayerData data = new PlayerData();
-        if (section != null && section.isList("allowedWorlds")) {
-            List<String> worlds = section.getStringList("allowedWorlds");
+        if (section != null && section.isList("allowed-worlds")) {
+            List<String> worlds = section.getStringList("allowed-worlds");
             data.allowedWorlds.addAll(worlds);
         }
         return data;
